@@ -3,6 +3,8 @@ import app from "./app";
 // database
 import "./config/mongoose";
 
+
+const port = process.env.PORT || 3000
 // Starting the server
-app.listen(app.get("port"));
-console.log("Server on port", app.get("port"));
+app.listen(port);
+console.log("Server on port", port);

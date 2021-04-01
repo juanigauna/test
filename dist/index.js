@@ -7,7 +7,8 @@ var _app = _interopRequireDefault(require("./app"));
 require("./config/mongoose");
 
 // database
-// Starting the server
-_app["default"].listen(_app["default"].get("port"));
+var port = process.env.PORT || 3000; // Starting the server
 
-console.log("Server on port", _app["default"].get("port"));
+_app["default"].listen(port);
+
+console.log("Server on port", port);

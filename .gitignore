@@ -6,6 +6,3 @@ uploads
 
 # environment variables
 .env
-
-## Dist
-dist
